@@ -64,6 +64,10 @@ const rows = [
     status: "failed",
   },
 ];
+
+async function handleUploadProofModal(taskId: string) {
+  await openUploadModal(taskId);
+}
 </script>
 
 <template>
@@ -76,7 +80,7 @@ const rows = [
       </template>
 
       <template #actions-data="{ row }">
-        <UButton variant="outline">
+        <UButton variant="outline" @click="handleUploadProofModal">
           {{
             row.status === "pending"
               ? "Upload Proof"
