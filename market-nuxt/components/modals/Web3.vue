@@ -4,8 +4,7 @@ defineProps<{
 }>();
 
 defineEmits(["destroy", "resolve"]);
-
-// const { connectors } = useConnect();
+const { $connectors } = useNuxtApp();
 </script>
 
 <template>
@@ -15,13 +14,13 @@ defineEmits(["destroy", "resolve"]);
     </div>
 
     <ul class="flex flex-col-reverse gap-[15px]">
-      <!-- <ConnectorItem
-        v-for="connector in connectors"
+      <ConnectorItem
+        v-for="connector in $connectors"
         :key="connector.id"
         :connector="connector"
         @destroy="$emit('destroy')"
         @resolve="$emit('resolve')"
-      /> -->
+      />
     </ul>
   </div>
 </template>
