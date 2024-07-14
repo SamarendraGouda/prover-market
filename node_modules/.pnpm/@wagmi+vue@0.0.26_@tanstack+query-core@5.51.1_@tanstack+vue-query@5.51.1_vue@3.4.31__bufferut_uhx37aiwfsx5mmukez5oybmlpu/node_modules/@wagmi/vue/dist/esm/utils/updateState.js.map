@@ -1,0 +1,1 @@
+{"version":3,"file":"updateState.js","sourceRoot":"","sources":["../../../src/utils/updateState.ts"],"names":[],"mappings":"AAAA,kIAAkI;AAElI,MAAM,UAAU,WAAW,CACzB,KAA8B,EAC9B,MAA2B;IAE3B,KAAK,MAAM,GAAG,IAAI,MAAM,CAAC,IAAI,CAAC,KAAK,CAAC,EAAE,CAAC;QACrC,KAAK,CAAC,GAAG,CAAC,GAAG,MAAM,CAAC,GAAG,CAAC,CAAA;IAC1B,CAAC;AACH,CAAC"}
