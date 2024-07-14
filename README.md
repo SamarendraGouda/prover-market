@@ -18,5 +18,4 @@ Features:
 
 Deployments:
 1. Polygon Amoy: 0xE6889EE46dAbb96d0F1e797bFB5f6a75d57B54Fa
-2. Linea Sepolia: 
-3. Base Sepolia:
+2. Linea Sepolia: 0x6c043Da03e8227f77696D9391966E42781C6A3B5
