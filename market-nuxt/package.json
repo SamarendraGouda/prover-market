@@ -13,6 +13,7 @@
     "@fontsource/poppins": "^5.0.14",
     "@nuxt/ui": "^2.17.0",
     "@tanstack/vue-query": "^5.51.1",
+    "@vue/devtools-api": "^6.6.3",
     "@wagmi/vue": "^0.0.26",
     "nuxt": "^3.12.3",
     "viem": "2.x",
