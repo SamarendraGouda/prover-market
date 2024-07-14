@@ -14,7 +14,9 @@ const task = {
   deadline: Math.floor((Date.now() + 1e8) / 1000),
   cid: 1, // this is circuit id
   amount: ethers.utils.parseEther("0.0001"),
-  data: ethers.utils.formatBytes32String("fuckit"),
+  data: ethers.utils.formatBytes32String("1_2"),
+  user: ethers.constants.AddressZero,
+  ctr: 1,
 };
 
 const options = {
@@ -23,11 +25,17 @@ const options = {
 
 async function initiateTask() {
   try {
-    const tx = await contract.initiateTask(task, options);
+    let tx = await contract.initiateTask(task, options);
     console.log("Transaction hash:", tx.hash);
 
-    const receipt = await tx.wait();
+    let receipt = await tx.wait();
     console.log("Transaction was mined in block:", receipt.blockNumber);
+
+    // tx = await contract.completeTask(0, 0, "0x1234");
+    // console.log("Transaction hash:", tx.hash);
+
+    // receipt = await tx.wait();
+    // console.log("Transaction was mined in block:", receipt.blockNumber);
   } catch (error) {
     console.error("Error initiating task:", error);
   }
