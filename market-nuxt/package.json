@@ -17,7 +17,8 @@
     "@wagmi/vue": "^0.0.26",
     "nuxt": "^3.12.3",
     "viem": "2.x",
-    "vue": "latest"
+    "vue": "latest",
+    "nuxt-svgo": "^4.0.0"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.12.1"

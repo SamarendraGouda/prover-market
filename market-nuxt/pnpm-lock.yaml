@@ -26,6 +26,9 @@ importers:
       nuxt:
         specifier: ^3.12.3
         version: 3.12.3(@parcel/watcher@2.4.1)(@types/node@20.14.10)(bufferutil@4.0.8)(idb-keyval@6.2.1)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.1)(terser@5.31.2)(utf-8-validate@5.0.10)(vite@5.3.3(@types/node@20.14.10)(terser@5.31.2))
+      nuxt-svgo:
+        specifier: ^4.0.0
+        version: 4.0.2(magicast@0.3.4)(rollup@4.18.1)(vue@3.4.31)
       viem:
         specifier: 2.x
         version: 2.17.3(bufferutil@4.0.8)(utf-8-validate@5.0.10)
@@ -4496,6 +4499,21 @@ packages:
 
   nuxt-icon@0.6.10:
     resolution: {integrity: sha512-S9zHVA66ox4ZSpMWvCjqKZC4ZogC0s2z3vZs+M4D95YXGPEXwxDZu+insMKvkbe8+k7gvEmtTk0eq3KusKlxiw==}
+
+  nuxt-svgo@4.0.2:
+    resolution: {integrity: sha512-B5KaFJtbxtsg2q3fhzjWbNjikiMhn3UTGtLqTzZugxzUbb5OfX9x7p05DOUjjzDG2glxiUshmvTfyGRh6445Fg==}
+    peerDependencies:
+      svgo-loader: ^4.0.0
+      vue: '>=3.2.13'
+      vue-loader: ^17.0.0
+      vue-svg-loader: 0.17.0-beta.2
+    peerDependenciesMeta:
+      svgo-loader:
+        optional: true
+      vue-loader:
+        optional: true
+      vue-svg-loader:
+        optional: true
 
   nuxt@3.12.3:
     resolution: {integrity: sha512-Qdkc+ucWwFcKsiL/OTF87jbgyFSymwPRKiiu0mvzsd/RXTn4hGiBduAlF3f7Yy0F9pDjSj8XHKDSnHYsDzm6rA==}
@@ -11822,6 +11840,17 @@ snapshots:
       - supports-color
       - vite
       - vue
+
+  nuxt-svgo@4.0.2(magicast@0.3.4)(rollup@4.18.1)(vue@3.4.31):
+    dependencies:
+      '@nuxt/kit': 3.12.3(magicast@0.3.4)(rollup@4.18.1)
+      mini-svg-data-uri: 1.4.4
+      svgo: 3.3.2
+      vue: 3.4.31
+    transitivePeerDependencies:
+      - magicast
+      - rollup
+      - supports-color
 
   nuxt@3.12.3(@parcel/watcher@2.4.1)(@types/node@20.14.10)(bufferutil@4.0.8)(idb-keyval@6.2.1)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.1)(terser@5.31.2)(utf-8-validate@5.0.10)(vite@5.3.3(@types/node@20.14.10)(terser@5.31.2)):
     dependencies:
