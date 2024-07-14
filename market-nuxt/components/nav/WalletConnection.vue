@@ -1,25 +1,24 @@
 <script setup lang="ts">
-import { shortenAddress } from "~/utils/address";
+import { shortenAddress } from "@/utils/address";
+import { useAccount } from "@wagmi/vue";
+import { useDisconnect } from "@wagmi/vue";
 
 const { address, isConnected } = useAccount();
-const { connectAsync, connectors } = useConnect();
 const { disconnectAsync } = useDisconnect();
 
-async function handleConnect() {
-  console.log(connectors);
-  await connectAsync({
-    connector: connectors.value[1],
-    chainId: 1115511,
-  });
-}
+const openConnectModal = async () => {
+  //
+};
 
-async function handleDisconnect() {
+const disconnect = async () => {
   await disconnectAsync();
-}
+};
 </script>
 
 <template>
-  <UButton v-if="!isConnected" @click="handleConnect"> Connect Wallet </UButton>
+  <UButton v-if="!isConnected" @click="openConnectModal">
+    Connect Wallet
+  </UButton>
 
   <div
     v-else
@@ -28,7 +27,7 @@ async function handleDisconnect() {
     {{ shortenAddress(address) }}
     <SvgoDisconnect
       class="w-5 h-5 text-white/40 hover:text-red-500/40"
-      @click="handleDisconnect"
+      @click="disconnect"
     />
   </div>
 </template>
