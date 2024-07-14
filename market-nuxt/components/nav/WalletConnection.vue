@@ -27,7 +27,7 @@ const disconnect = async () => {
   >
     {{ shortenAddress(address?.toString(), 6) }}
     <SvgoDisconnect
-      class="w-5 h-5 text-white/40 hover:text-red-500/40"
+      class="w-5 h-5 text-white/40 hover:text-red-500/40 cursor-pointer"
       @click="disconnect"
     />
   </div>

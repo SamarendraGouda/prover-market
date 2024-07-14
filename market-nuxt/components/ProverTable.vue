@@ -65,6 +65,13 @@ const rows = [
     status: "expired",
   },
 ];
+
+async function handleBid(taskId: string, status: string) {
+  if (status === "expired") return;
+
+  await openBidModal(taskId);
+  console.log(taskId);
+}
 </script>
 
 <template>
@@ -76,7 +83,7 @@ const rows = [
       </template>
 
       <template #actions-data="{ row }">
-        <UButton variant="outline">
+        <UButton variant="outline" @click="handleBid(row.taskId, row.status)">
           {{ row.status === "live" ? "Bid Now" : "Not Available" }}
         </UButton>
       </template>

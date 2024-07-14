@@ -46,5 +46,36 @@ export default defineAppConfig({
                 },
             },
         },
+        input: {
+            rounded: 'rounded-[29px]',
+            default: {
+                color: 'gray',
+                variant: 'outline',
+            },
+            padding: {
+                sm: 'py-2 px-2',
+                md: 'py-2.5 px-[15px]',
+                xl: 'py-3 px-4.5',
+            },
+            color: {
+                gray: {
+                    glass: 'bg-white/[0.08] disabled:ring-0 ring-1 ring-white/40 border-none outline-none focus:ring-1 focus:ring-blue-450',
+                    outline: 'bg-gri-800 placeholder:text-gri-400 ring-1 ring-inset ring-gri-700 focus:ring-1 focus:ring-blue-450',
+                },
+            },
+        },
+
+        dropdown: {
+            rounded: 'rounded-5',
+            width: 'w-72',
+            padding: 'p-1.5 max-h-[400px] overflow-auto empty:hidden',
+            background: 'bg-white/[0.08] sm:bg-white/[0.04] backdrop-blur-[50px]',
+            ring: 'ring-1 ring-gri-750',
+            item: {
+                active: 'bg-white/[0.04]',
+                padding: 'px-4 py-2.5',
+                rounded: 'rounded-3xl',
+            },
+        },
     },
 })
