@@ -8,6 +8,13 @@ Features:
 2. Fully Decentralised on an AVS, the proof is verified by a set of operators.
 3. Malicious provers get slashed.
 
+<img width="1512" alt="Screenshot 2024-07-14 at 7 53 33 AM" src="https://github.com/user-attachments/assets/1213af46-51e5-443e-88b4-74d562c94f79">
+<img width="1512" alt="Screenshot 2024-07-14 at 7 53 20 AM" src="https://github.com/user-attachments/assets/593b3535-d5d0-4b19-953b-62ec574077ea">
+<img width="1512" alt="Screenshot 2024-07-14 at 7 53 15 AM" src="https://github.com/user-attachments/assets/3d454817-8768-4e58-aafb-dea232ec3668">
+<img width="1512" alt="Screenshot 2024-07-14 at 7 53 03 AM" src="https://github.com/user-attachments/assets/cc5eb0bb-063c-4e84-9c71-1b4010d4f11c">
+<img width="1512" alt="Screenshot 2024-07-14 at 7 51 06 AM" src="https://github.com/user-attachments/assets/48073a67-32c8-4b7e-93a6-bf1bb45e4726">
+
+
 
 Deployments:
 1. Polygon Amoy: 0xE6889EE46dAbb96d0F1e797bFB5f6a75d57B54Fa
