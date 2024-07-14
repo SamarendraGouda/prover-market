@@ -1,7 +1,0 @@
-{
-	"dependencies": {
-		"@wagmi/vue": "^0.0.26",
-		"viem": "2.x",
-		"@tanstack/vue-query": "^5.51.1"
-	}
-}
